@@ -1,4 +1,8 @@
 /GriefPreventionFlags.iml
+/.project
+/.classpath
+/.settings/
 /.idea/
 /target/
 /dependency-reduced-pom.xml
+/bin/
