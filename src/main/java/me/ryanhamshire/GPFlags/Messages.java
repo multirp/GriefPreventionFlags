@@ -161,6 +161,8 @@ public enum Messages {
     NoOwnerFlag,
     EnableNoElytra,
     DisableNoElytra,
+    EnableNoMossGrowth,
+    DisableNoMossGrowth,
 
     //EXPERIMENTAL
     ChangeBiomeSet,

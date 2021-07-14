@@ -281,6 +281,9 @@ public class FlagsDataStore {
 
         this.addDefault(defaults, Messages.EnableNoElytra, "Players will no longer be able to glide in this area", null);
         this.addDefault(defaults, Messages.DisableNoElytra, "Players will now be able to glide in this area", null);
+        
+        this.addDefault(defaults, Messages.EnableNoMossGrowth, "Moss and Lichen can no longer be bonemealed in this area", null);
+        this.addDefault(defaults, Messages.DisableNoMossGrowth, "You can now grow moss and lichen in this area", null);
 
         //load the config file
         FileConfiguration config = YamlConfiguration.loadConfiguration(new File(messagesFilePath));

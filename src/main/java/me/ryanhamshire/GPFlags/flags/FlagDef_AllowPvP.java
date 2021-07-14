@@ -274,6 +274,7 @@ public class FlagDef_AllowPvP extends PlayerMovementFlagDefinition {
         }
     }
 
+    @SuppressWarnings("incomplete-switch")
     private boolean isProjectile(ItemStack item) {
         switch (item.getType()) {
             case ARROW:
