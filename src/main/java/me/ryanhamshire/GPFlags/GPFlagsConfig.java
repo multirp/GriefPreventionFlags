@@ -50,6 +50,7 @@ import me.ryanhamshire.GPFlags.flags.FlagDef_NoMobSpawns;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NoMobSpawnsType;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NoMonsterSpawns;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NoMonsters;
+import me.ryanhamshire.GPFlags.flags.FlagDef_NoMossGrowth;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NoOpenDoors;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NoPetDamage;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NoPlayerDamage;
@@ -230,6 +231,7 @@ public class GPFlagsConfig {
             this.flagManager.registerFlagDefinition(new FlagDef_NoMobSpawnsType(this.flagManager, plugin));
             this.flagManager.registerFlagDefinition(new FlagDef_NoItemDamage(this.flagManager, plugin));
             this.flagManager.registerFlagDefinition(new FlagDef_NoElytra(this.flagManager, plugin));
+            this.flagManager.registerFlagDefinition(new FlagDef_NoMossGrowth(this.flagManager, plugin));
 
             try {
                 Class.forName("org.bukkit.event.raid.RaidTriggerEvent");

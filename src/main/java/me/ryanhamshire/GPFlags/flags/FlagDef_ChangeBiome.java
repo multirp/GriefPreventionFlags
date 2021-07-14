@@ -47,7 +47,6 @@ public class FlagDef_ChangeBiome extends FlagDefinition {
                     	Location loadLoc = new Location(world, finalX, 100, z);
                     	Chunk loadChunk = loadLoc.getChunk();
                     	if (!(loadChunk.isLoaded())) {
-                    		System.out.println("Loaded chunk at: " + loadChunk.toString());
                     		loadChunk.load();
                     	}
                         for (int y = 0; y <= 255; y++) {

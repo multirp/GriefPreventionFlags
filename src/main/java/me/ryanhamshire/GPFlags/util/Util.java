@@ -165,7 +165,8 @@ public class Util {
      * @param itemStack ItemStack to check
      * @return True if item is a vehicle
      */
-    public static boolean isAVehicle(ItemStack itemStack) {
+    @SuppressWarnings("incomplete-switch")
+	public static boolean isAVehicle(ItemStack itemStack) {
         switch (itemStack.getType()) {
             case MINECART:
             case CHEST_MINECART:
