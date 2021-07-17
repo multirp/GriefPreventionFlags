@@ -1,4 +1,28 @@
 # GriefPreventionFlags
+
+This is a fork of the classic Grief Prevention Flags plugin, originally made by [BigScary](https://github.com/BigScary/GriefPreventionFlags), then maintained by [ShaneBee](https://github.com/ShaneBeee/GriefPreventionFlags) (see credits below).  At some point I'm likely to remove it from the stream entirely and set it up on it's own repo.
+
+## Why change repos?
+Put simply, BigScary no longer maintains this, and ShaneBee's fork has been Archived, so I would not be able to pull changes downstream anyway.  And I plan to - as time allows - clean some things up.  If ShaneBee's fork becomes active again, I would be more than happy to PR it.
+
+## Requirements
+* **GriefPrevention:** This fork now requires the snapshot of GriefPrevention.  The last packaged release (16.17.1) uses a different method of claim permission checking, and I moved over to the newer supplier model, so this will only work with the newer snapshots
+
+## Changelog
+Since ShaneBee's fork, there have been a few changes.  This will be brief as none of the changes were particularly major.
+
+### 5.10.2
+* **GriefPrevention Update:** This plugin is now good up to [GriefPrevention](https://github.com/techfortress/GriefPrevention) 16.17.2-SNAPSHOT
+* **NoIceForm:** This flag now blocks natural (weather) formation of ice, as well as unnatural (Frostwalker).  I did not move Frostwalker/Frosted Ice into it's own flag, but may if it becomes necessary
+* **NoMossGrowth:** This flag prevents the bonemealing of Moss blocks and glowing lichen unless the player has Build permissions within the claim
+
+
+---
+Below has been archived from my fork of [ShaneBee's Repo](https://github.com/ShaneBeee/GriefPreventionFlags)
+
+---
+
+# GriefPreventionFlags
 ![GitHub release](https://img.shields.io/github/release/ShaneBeee/GriefPreventionFlags.svg?style=for-the-badge)
 ![GitHub issues](https://img.shields.io/github/issues-raw/ShaneBeee/GriefPreventionFlags.svg?style=for-the-badge)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/ShaneBeee/GriefPreventionFlags.svg?style=for-the-badge)
