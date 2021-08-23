@@ -16,6 +16,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -52,8 +53,33 @@ public class SetClaimFlagPlayerCmd extends BaseCmd {
             Util.sendMessage(player, TextMode.Err, Messages.NoFlagInClaim);
             return true;
         }
-
-        String[] params = new String[args.length - 2];
+        
+        String[] moddedArgs = new String[args.length - 2];
+        
+        ArrayList<String> paramArray = new ArrayList<>();
+        
+        for (String arg : moddedArgs) {
+        	paramArray.add(arg);
+        }
+        
+        if (def.getName().equalsIgnoreCase("RespawnLocation")) {
+        	System.out.println("We're in the respawnloc flag");
+        	String world = player.getLocation().getWorld().getName();
+        	String x = String.valueOf(player.getLocation().getX());
+        	String y = String.valueOf(player.getLocation().getY());
+        	String z = String.valueOf(player.getLocation().getZ());
+        	System.out.println("coords: " + world + x + y + z);
+        	System.out.println(player);
+        	paramArray.clear();
+        	paramArray.add(world);
+        	paramArray.add(x);
+        	paramArray.add(y);
+        	paramArray.add(z);
+        }
+        
+        String[] params = paramArray.toArray(new String[paramArray.size()]);
+        System.out.println("String Array: " + params.toString());
+        
         System.arraycopy(args, 2, params, 0, args.length - 2);
 
         // SET BIOME

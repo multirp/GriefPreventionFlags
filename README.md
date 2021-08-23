@@ -13,6 +13,7 @@ Since ShaneBee's fork, there have been a few changes.  This will be brief as non
 
 ### 5.10.2
 * **GriefPrevention Update:** This plugin is now good up to [GriefPrevention](https://github.com/techfortress/GriefPrevention) 16.17.2-SNAPSHOT
+* **RespawnLocation:** The ClaimPlayerFlag RespawnLocation no longer takes arguments.  It was interacting poorly with PlaceholderAPI for some reason.  Now, the player inserted into the command will act as the location - the location they are at will be the location people respawn.
 * **NoIceForm:** This flag now blocks natural (weather) formation of ice, as well as unnatural (Frostwalker).  I did not move Frostwalker/Frosted Ice into it's own flag, but may if it becomes necessary
 * **NoMossGrowth:** This flag prevents the bonemealing of Moss blocks and glowing lichen unless the player has Build permissions within the claim
 

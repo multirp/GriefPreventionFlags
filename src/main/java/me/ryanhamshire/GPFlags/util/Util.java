@@ -34,7 +34,7 @@ import java.util.regex.Pattern;
 @SuppressWarnings("WeakerAccess")
 public class Util {
 
-    private static final String PREFIX = "&7[&6A&eF&7] &r";
+    private static final String PREFIX = "&7[&6GP&eF&7] &r";
     private static final Pattern HEX_PATTERN = Pattern.compile("<#([A-Fa-f0-9]){6}>");
 
     /**
@@ -165,7 +165,6 @@ public class Util {
      * @param itemStack ItemStack to check
      * @return True if item is a vehicle
      */
-    @SuppressWarnings("incomplete-switch")
 	public static boolean isAVehicle(ItemStack itemStack) {
         switch (itemStack.getType()) {
             case MINECART:
@@ -181,8 +180,9 @@ public class Util {
             case OAK_BOAT:
             case SPRUCE_BOAT:
                 return true;
+            default:
+            	return false;
         }
-        return false;
     }
 
     public static boolean isMonster(Entity entity) {
