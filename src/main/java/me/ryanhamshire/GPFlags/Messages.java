@@ -163,6 +163,8 @@ public enum Messages {
     DisableNoElytra,
     EnableNoMossGrowth,
     DisableNoMossGrowth,
+    EnableNoDeathMessage,
+    DisableNoDeathMessage,
 
     //EXPERIMENTAL
     ChangeBiomeSet,

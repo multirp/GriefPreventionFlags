@@ -284,6 +284,9 @@ public class FlagsDataStore {
         
         this.addDefault(defaults, Messages.EnableNoMossGrowth, "Moss and Lichen can no longer be bonemealed in this area", null);
         this.addDefault(defaults, Messages.DisableNoMossGrowth, "You can now grow moss and lichen in this area", null);
+        
+        this.addDefault(defaults, Messages.EnableNoDeathMessage, "Players killed in this claim will no longer have death messages", null);
+        this.addDefault(defaults, Messages.DisableNoDeathMessage, "Players killed in this claim will once again post death messages", null);
 
         //load the config file
         FileConfiguration config = YamlConfiguration.loadConfiguration(new File(messagesFilePath));

@@ -23,6 +23,7 @@ import me.ryanhamshire.GPFlags.flags.FlagDef_NetherPortalConsoleCommand;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NetherPortalPlayerCommand;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NoChorusFruit;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NoCombatLoot;
+import me.ryanhamshire.GPFlags.flags.FlagDef_NoDeathMessage;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NoElytra;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NoEnderPearl;
 import me.ryanhamshire.GPFlags.flags.FlagDef_NoEnter;
@@ -69,6 +70,7 @@ import me.ryanhamshire.GPFlags.flags.FlagDef_RaidMemberOnly;
 import me.ryanhamshire.GPFlags.flags.FlagDef_RespawnLocation;
 import me.ryanhamshire.GPFlags.flags.FlagDef_SpleefArena;
 import me.ryanhamshire.GPFlags.flags.FlagDef_TrappedDestination;
+import me.ryanhamshire.GPFlags.flags.FlagDefinition;
 import me.ryanhamshire.GPFlags.util.Util;
 import me.ryanhamshire.GriefPrevention.Claim;
 import me.ryanhamshire.GriefPrevention.GriefPrevention;
@@ -232,6 +234,7 @@ public class GPFlagsConfig {
             this.flagManager.registerFlagDefinition(new FlagDef_NoItemDamage(this.flagManager, plugin));
             this.flagManager.registerFlagDefinition(new FlagDef_NoElytra(this.flagManager, plugin));
             this.flagManager.registerFlagDefinition(new FlagDef_NoMossGrowth(this.flagManager, plugin));
+            this.flagManager.registerFlagDefinition(new FlagDef_NoDeathMessage(this.flagManager, plugin));
 
             try {
                 Class.forName("org.bukkit.event.raid.RaidTriggerEvent");
